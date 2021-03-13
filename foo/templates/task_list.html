@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1>Task</h1>
+    </div>
+</div>
+<div class="row">
+    {% for task in object_list %}
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{task.title}}</h5>
+                <p class="card-text">{{task.content | truncatewords:15}}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+      {% endfor %}
+</div>
+
+{% endblock content %}
+    
