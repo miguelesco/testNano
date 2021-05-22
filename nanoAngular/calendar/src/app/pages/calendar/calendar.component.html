@@ -1,12 +1,12 @@
 <div class="container-fluid">
   <div class="navbar">
-      <div class="leftBtn">
-          <object data="./assets/hamburger-menu.svg" width="20" height="25"> </object>
-          <h2>Mayo</h2>
-      </div>
-      <div class="rightBtn">
-
-      </div>
+        <button mat-flat-button (click)="previusMonth()">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+        </button>
+        <h2>Mayo</h2>
+        <button mat-flat-button>
+          <mat-icon>more_vert</mat-icon>
+        </button>
   </div>
   
   <div class="row">
@@ -22,7 +22,7 @@
       <div class="col">
           <p class="day">J</p>
       </div>
-      <div class="col">
+      <div class="col ">
           <p class="day">V</p>
       </div>
       <div class="col">
@@ -33,8 +33,8 @@
       </div>
   </div>
   <div class="row ">
-      <div class="col border flex-column day-col" *ngFor="let testArray1 of testArray">
-          <p class="numberDay">{{testArray1}}</p>
+      <div class="col border flex-column col-lg-2 .col-xs-2	.col-sm-2	.col-md-2" *ngFor="let testArray1 of testArray">
+          <p class="numberDay ">{{testArray1}}</p>
           <p class="event">Evento del dia de hoy</p>
       </div>
       
