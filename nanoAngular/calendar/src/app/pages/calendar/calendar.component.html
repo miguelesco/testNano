@@ -1,1 +1,42 @@
-<p>calendar works!</p>
+<div class="container-fluid">
+  <div class="navbar">
+      <div class="leftBtn">
+          <object data="./assets/hamburger-menu.svg" width="20" height="25"> </object>
+          <h2>Mayo</h2>
+      </div>
+      <div class="rightBtn">
+
+      </div>
+  </div>
+  
+  <div class="row">
+      <div class="col ">
+          <p class="day">L</p>
+      </div>
+      <div class="col">
+          <p class="day">M</p>
+      </div>
+      <div class="col">
+          <p class="day">X</p>
+      </div>
+      <div class="col">
+          <p class="day">J</p>
+      </div>
+      <div class="col">
+          <p class="day">V</p>
+      </div>
+      <div class="col">
+          <p class="day">S</p>
+      </div>
+      <div class="col">
+          <p class="day">D</p>
+      </div>
+  </div>
+  <div class="row ">
+      <div class="col border flex-column day-col" *ngFor="let testArray1 of testArray">
+          <p class="numberDay">{{testArray1}}</p>
+          <p class="event">Evento del dia de hoy</p>
+      </div>
+      
+  </div>
+</div>
